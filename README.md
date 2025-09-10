@@ -25,12 +25,16 @@
 ````
 filter-me-if-you-can/
 │── src/
-│   ├── core/        # main classes
-│   ├── main.py      # entry point
-│── data/            # input and output files
-│── assets/          # images for the README
-│── pyproject.toml   # Poetry dependencies
-│── README.md
+│   ├── core/  
+│   │    └── data_handler.py  
+│   └── main.py  
+│── data/  
+│     ├── raw/
+│     │     └── students_score.csv  
+│     └── processed/ # outputs
+│── assets/  
+│── pyproject.toml  
+└── README.md
 ````
 
 ## Goal
