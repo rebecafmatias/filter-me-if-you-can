@@ -14,10 +14,11 @@ class CSVProcessor:
             os.makedirs(self.folder_path)
 
     def check_new_files(self):
+        new_files = []
         files = os.listdir(self.folder_path)
         for file in files:
             if file not in self.previous_files:
-                new_files = file
+                new_files.append(file)
 
         if new_files:
             print(f"New files detected: {new_files}")
@@ -41,4 +42,5 @@ class CSVProcessor:
     def processing(self):
         self.create_path()
         self.check_new_files()
-        return self.read_csv()
+        output = self.read_csv()
+        return output
