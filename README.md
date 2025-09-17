@@ -4,16 +4,10 @@
 
 ### A mini Python project to practice:
 
-A small Python project built to practice:
-
 - Organizing code with classes
-
 - Reading CSV files
-
 - Converting data into pandas DataFrames
-
 - Applying filters on columns
-
 - Saving processed outputs
 
 The idea is to simulate a mini data pipeline: raw files are placed in ``data/raw``, processed with the code in ``src/core``, and final results are saved in ``data/processed``.
