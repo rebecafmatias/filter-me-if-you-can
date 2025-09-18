@@ -4,8 +4,8 @@ from pathlib import Path
 
 import schedule
 
-from core.DataFilter import filter_by_column
-from core.DataLoader import CSVProcessor
+from src.core.DataFilter import filter_by_column
+from src.core.DataLoader import CSVProcessor
 
 
 def processing_data():
@@ -35,8 +35,8 @@ def processing_data():
         final_df.to_csv(target_schema / output_file_name, index=False)
     except AttributeError:
         print(
-            f"Your object is a {type(final_df)}. You must enter a dataframe in \
-            order to complete a filtering operation."
+            f"""Your object is a {type(final_df)}. You must enter a dataframe in
+            order to complete a filtering operation."""
         )
 
 
